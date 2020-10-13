@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+  //verificar se um número é par ou ímpar
+    printf("Digite o numero que quiser verificar:\n");
+    int numero;
+    scanf("%i", &numero);
+    if(numero==0){
+        printf("0 eh por definicao um numero par\n");
+    }
+    else if(numero%2==0){
+        printf("%i eh par\n", numero);
+    }
+    else{
+        printf("%i eh impar\n", numero);
+    }
+
+
+
+    return 0;
+
+    
+}

@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(){
+  //Calcular descontos: até 100= 1%; de 100.01 até 500=5%; acima de 500= 10%
+    
+    printf("Digite um numero racional positivo para saber o desconto do produto do produto:\n");
+    float numero;
+    float desconto;
+    float valorFinal;
+    scanf("%f", &numero);
+    if(numero>0 && numero<=100){
+        desconto= numero/100;
+        valorFinal= numero-desconto;
+        printf("Seu desconto eh de 1 por cento\n");
+        printf("O valor do produto com desconto eh: %f\n", valorFinal);
+    }
+    else if(numero>100 && numero<=500){
+        desconto= 5 * numero/100;
+        valorFinal= numero-desconto;
+        printf("Seu desconto eh de 5 por cento\n");
+        printf("O valor do produto com desconto eh: %f\n", valorFinal);
+    }
+    else if(numero>500){
+        desconto= 10 * numero/100;
+        valorFinal= numero-desconto;
+        printf("Seu desconto eh de 10 por cento\n");
+        printf("O valor do produto com desconto eh: %f\n", valorFinal);
+    }
+
+    return 0;
+
+
+    
+}
