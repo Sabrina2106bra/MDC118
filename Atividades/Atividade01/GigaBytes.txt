@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+    //Converta um numero de Gigabytes em bytes  (10b = 1024^3bytes)
+    int gigabytes;
+    long long int resultado=1;
+    printf("digite o numero de Gigabytes:\n");
+    scanf("%i", &gigabytes);
+    resultado = gigabytes * 1024 * 1024 * 1024;
+    // ou pow(3) etc
+    printf("Resultado: %lld", resultado);
+    // %lld para long long int 
+    return 0;
+
+    
+}
+

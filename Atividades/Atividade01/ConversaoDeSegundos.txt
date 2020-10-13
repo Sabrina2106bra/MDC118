@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main (void){
+    //Converter um numero de segundos para horas e minutos e segundos
+    printf("Converter quanto segundos?\n");
+    int segundos;
+    scanf("%i", &segundos);
+    int minutos=0, horas=0;
+    
+    while(segundos>=60){
+        if(segundos>=3600){
+            segundos= segundos-3600;
+            horas++;
+        }
+        if(segundos>=60 && segundos<3600){
+            segundos= segundos-60;
+            minutos++;
+        }
+    }
+    printf("%i Horas, %i Minutos e %i segundos", horas, minutos, segundos);
+
+    return 0;
+}

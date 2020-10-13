@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main (){
+    //2 x pi x raio  ;pi=3.1416
+    float raio;
+    printf("Qual o raio do circulo?\n");
+    scanf("%f", &raio);
+
+    float resultado = 1;
+    float pi=3.1416;
+    resultado = 2*pi*raio;
+    printf("O perimetro e: %f\n", resultado);
+
+    return 0;
+}
