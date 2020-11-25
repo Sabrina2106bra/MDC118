@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+//Printar valor reverso
+
+int main(void) {
+
+    char vetor[80];
+    printf("Digite um vetor com 80 caracteres:\n");
+    for(int i = 0; i <= 79; i++){
+            scanf("%c", &vetor[i]);
+    }
+       
+    for(int i = 79; i >= 0; i--){
+            printf("%c", vetor[i]);
+    }
+      
+   return 0;
+}

@@ -1,0 +1,22 @@
+#include <stdio.h>
+    //Ler 10 valores e identificar o maior e o menor
+int main(void){
+    int vetor[10];
+    int maiorNumero=0;
+    int menorNumero=0;
+    printf("Digite 10 numeros separados por Enter:\n");
+
+    for(int i=0; i<9; i++){
+        scanf("%i", &vetor[i]);
+        if(vetor[i]>vetor[i-1]){
+            maiorNumero=vetor[i];
+        }else if (vetor[i]<vetor[i-1]){
+            menorNumero=vetor[i];
+        }
+    }
+
+    printf("O maior numero eh: %i\n", maiorNumero);
+    printf("O menor numero eh: %i\n", menorNumero);
+
+    return 0;
+}
