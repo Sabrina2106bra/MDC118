@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+    //Ler um ano e verificar se ele é bissexto, eh multiplo de 4     ???e nao é multiplo de 100 ou é multiplo de 400???
+
+int main(void){
+    int ano;
+    printf("Digite um ano para testar:\n");
+    scanf("%i", &ano);
+    if(ano % 400 ==0){
+        printf("%i eh um ano bissexto\n", ano);
+    }else if(ano % 4 == 0 && ano % 100 != 0){
+        printf("%i eh um ano bissexto\n", ano);
+    }else
+    {
+        printf("%i nao eh um ano bissexto\n", ano);
+    }
+    
+
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+    //Verificar se é uma letra, numero ou caractere especial
+
+int main(void){
+    char tecla;
+    printf("Digite uma tecla valida:\n");
+    scanf("%c", &tecla);
+    // letras funcionam como numeros
+    if(tecla>="a"&& tecla<= "z"|| tecla>="A"&& tecla<= "Z"){
+        printf("A tecla digitada eh um caracter\n");
+    }else if(tecla>='0' && tecla<='9'){
+        prinf("A tecla digitada eh um numero\n");
+    }else{
+        printf("A tecla digitada eh um caractere especial");
+    }
+
+
+
+    
+    return 0;
+}
