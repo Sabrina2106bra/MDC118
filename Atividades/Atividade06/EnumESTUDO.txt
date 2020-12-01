@@ -1,0 +1,28 @@
+#include <stdio.h>
+\
+
+int main(void) {
+    enum ano{janeiro, fevereiro, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro};
+    char meses[20][12]={
+        "janeiro",
+        "fevereiro",
+        "marco",
+        "abril",
+        "maio",
+        "junho",
+        "julho",
+        "agosto",
+        "setembro",
+        "outubro",
+        "novembro",
+        "dezembro"
+    };
+    enum ano referencia;
+    for(referencia=janeiro; referencia<= dezembro; referencia++){
+        printf("%s\n", meses[referencia]);
+    }
+
+
+
+    return 0; 
+}
