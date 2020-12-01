@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+struct data{
+        int dia;              
+        int mes;
+        int ano;
+    };
+
+int main(void){
+    struct data hoje;
+    printf("Que DIA do mes eh hoje?\n" );
+    scanf("%i", &hoje.dia );
+    printf("Em que MES estamos?\n" );
+    scanf("%i", &hoje.mes );
+    printf("Em que ANO estamos?\n" );
+    scanf("%i", &hoje.ano );
+    
+
+    printf("Data BRASILEIRA: %i/%i/%i \n", hoje.dia, hoje.mes, hoje.ano);
+    printf("Data AMERICANA: %i/%i/%i \n", hoje.mes, hoje.dia, hoje.ano);
+
+
+    return 0;
+}      
