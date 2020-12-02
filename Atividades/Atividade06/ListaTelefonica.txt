@@ -1,0 +1,30 @@
+#include  <stdio.h>
+
+
+
+int main(void){
+    char nomes[10][30];
+    char numeros[10][30];
+    
+    for(int i=0; i<10; i++){
+        printf("Digite o nome do contato %i\n", i+1);
+        for(int j=0; j<30; j++){
+            scanf("%c", &nomes[i][j]);
+            if(nomes[i][j]== '\n'){
+                break;
+            }
+        }
+        printf("Digite o numero do contato %i\n", i + 1 );
+        for(int j=0; j<30; j++){
+            scanf("%c", &numeros[i][j]);
+            if(numeros[i][j]== '\n'){
+                break;
+            }
+        }
+    }
+    for(int i=0; i<10; i++){
+        printf("Contato %i:\n %s-%s", i+1 , nomes[i], numeros[i]);
+    }
+
+    return 0;
+}
